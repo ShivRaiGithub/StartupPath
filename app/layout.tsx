@@ -25,6 +25,9 @@ const epilogue = Epilogue({
   subsets: ["latin"],
 });
 
+const siteUrl = getSiteUrl();
+const ogImageUrl = `${siteUrl}${OG_IMAGE_PATH}`;
+
 export const metadata: Metadata = {
   metadataBase: getSiteOrigin(),
   title: {
@@ -47,13 +50,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: getSiteUrl(),
+    url: siteUrl,
     siteName: SITE_NAME,
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
     images: [
       {
-        url: OG_IMAGE_PATH,
+        url: ogImageUrl,
         width: 1200,
         height: 630,
         alt: OG_IMAGE_ALT,
@@ -64,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
-    images: [OG_IMAGE_PATH],
+    images: [ogImageUrl],
   },
   robots: {
     index: true,
