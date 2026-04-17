@@ -132,29 +132,7 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section className="mx-auto mt-16 max-w-7xl px-6">
-        <div className="grid gap-8 md:grid-cols-3">
-          {[
-            { number: "$2B+", label: "raised by alumni", color: "#FEF9C3", rotation: "rotate-[1deg]" },
-            { number: "120+", label: "countries", color: "#DBEAFE", rotation: "rotate-[-1deg]" },
-            { number: "50,000+", label: "founders", color: "#FCE7F3", rotation: "rotate-[1.5deg]" },
-          ].map((item) => (
-            <div
-              key={item.number}
-              className={`sticky-shadow relative p-8 text-center ${item.rotation}`}
-              style={{
-                backgroundImage:
-                  "linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0)), var(--sticky)",
-                ["--sticky" as string]: item.color,
-              }}
-            >
-              <div className="absolute -top-3 left-1/2 h-6 w-6 -translate-x-1/2 rounded-full bg-primary" />
-              <p className="pt-5 font-handwritten text-5xl font-bold text-primary">{item.number}</p>
-              <p className="text-sm text-on-surface-variant">{item.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+  
 
       <section className="mx-auto mt-16 max-w-7xl px-6">
         <h2 className="mb-8 font-handwritten text-4xl font-bold text-on-surface">What are you looking for?</h2>
