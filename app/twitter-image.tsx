@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 import { SITE_NAME } from "@/lib/site";
 
-export const alt = "StartPath startup opportunities directory";
+export const alt = "StartupPath startup opportunities directory";
 export const size = {
   width: 1200,
   height: 630,

@@ -54,8 +54,8 @@ export default function Navbar() {
       <header className="fixed top-0 z-50 w-full border-b border-primary/10 bg-[#fef9f1]/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/startpathLogo.png" alt="StartPath logo" width={36} height={36} className="h-9 w-9 object-contain" />
-            <span className="-rotate-1 font-handwritten text-3xl font-bold text-primary">StartPath</span>
+            <Image src="/startuppathLogo.png" alt="StartupPath logo" width={36} height={36} className="h-9 w-9 object-contain" />
+            <span className="-rotate-1 font-handwritten text-3xl font-bold text-primary">StartupPath</span>
           </Link>
 
           <div className="hidden items-center gap-6 md:flex">

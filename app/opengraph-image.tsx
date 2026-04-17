@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 import { SITE_NAME } from "@/lib/site";
 
-export const alt = "StartPath - Global startup opportunities";
+export const alt = "StartupPath - Global startup opportunities";
 export const size = {
   width: 1200,
   height: 630,
@@ -44,7 +44,7 @@ export default function OpenGraphImage() {
               Find fellowships, accelerators, incubators, and grants worldwide.
             </div>
           </div>
-          <div style={{ fontSize: 24, color: "#4b5563" }}>startpath.vercel.app</div>
+          <div style={{ fontSize: 24, color: "#4b5563" }}>startuppath.vercel.app</div>
         </div>
       </div>
     ),

@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { getSiteOrigin, getSiteUrl, SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
+import { OG_IMAGE_ALT, OG_IMAGE_PATH, getSiteOrigin, getSiteUrl, SITE_DESCRIPTION, SITE_NAME } from "../lib/site";
 import "./globals.css";
 
 const caveat = Caveat({
@@ -53,10 +53,10 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [
       {
-        url: "/opengraph-image",
+        url: OG_IMAGE_PATH,
         width: 1200,
         height: 630,
-        alt: "StartPath startup programs directory",
+        alt: OG_IMAGE_ALT,
       },
     ],
   },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
-    images: ["/twitter-image"],
+    images: [OG_IMAGE_PATH],
   },
   robots: {
     index: true,

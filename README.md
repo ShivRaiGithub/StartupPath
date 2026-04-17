@@ -1,6 +1,6 @@
-# StartPath
+# StartupPath
 
-StartPath is a curated directory of startup opportunities worldwide, including fellowships, accelerators, incubators, and grants.
+StartupPath is a curated directory of startup opportunities worldwide, including fellowships, accelerators, incubators, and grants.
 
 ## Tech Stack
 
